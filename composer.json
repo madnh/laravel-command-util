@@ -1,0 +1,21 @@
+{
+    "name": "madnh/laravel-command-util",
+    "description": "Utils for a laravel command class",
+    "keywords": ["laravel", "command"],
+    "type": "library",
+    "require": {
+        "laravel/framework": "~5.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "MaDnh",
+            "email": "dodanhmanh@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4":{
+            "MaDnh\\LaravelCommandUtil\\": "src/"
+        }
+    }
+}
