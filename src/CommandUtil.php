@@ -2,7 +2,7 @@
 
 namespace MaDnh\LaravelCommandUtil;
 
-trait CommandUtils
+trait CommandUtil
 {
 
     protected $list_index = 1;

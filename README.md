@@ -2,26 +2,62 @@
 
 Add util methods to laravel commands
 
+## Installation
+
+To get started with Command Utils, simply run:
+
+```
+composer require madnh/laravel-command-util
+```
+
+## Basic Usage
+
+From your command, use `MaDnh\LaravelCommandUtil\CommandUtil` trait
+
+```php
+<?php
+
+namespace App\Console\Commands;
+
+use Illuminate\Console\Command;
+use MaDnh\LaravelCommandUtil\CommandUtil;
+
+class FooCommand extends Command
+{
+    use CommandUtil;
+    
+    //...
+}
+```
+
 ## Methods
 
 ### Banners
 
-```$this->banner('message'[, $options_as_array])```
+```php
+$this->banner('message'[, $options_as_array])
+```
 
 ![Banner](http://i.imgur.com/ImOTNbh.png)
 
-```$this->softBanner('message'[, $options_as_array])```
+```php
+$this->softBanner('message'[, $options_as_array])
+```
 
 ![Soft Banner](http://i.imgur.com/XjXe4SR.png)
 
 
 ### Headers
 
-```$this->header('message'[, $options_as_array])```
+```php
+$this->header('message'[, $options_as_array])
+```
 
 ![Header](http://i.imgur.com/qPk1LAw.png)
 
-```$this->softHeader('message'[, $options_as_array])```
+```php
+$this->softHeader('message'[, $options_as_array])
+```
 
 ![Soft Header](http://i.imgur.com/nKN99r6.png)
 
@@ -29,31 +65,41 @@ Add util methods to laravel commands
 
 ### Titles
 
-```$this->title('message'[, $options_as_array])```
+```php
+$this->title('message'[, $options_as_array])
+```
 
 ![Title](http://i.imgur.com/cqlDBrZ.png)
 
-```$this->softTitle('message'[, $options_as_array])```
+```php
+$this->softTitle('message'[, $options_as_array])
+```
 
 ![Soft Title](http://i.imgur.com/579lkoK.png)
 
 ### Paragraph Title
 
-```$this->paragraphTitle('message'[, $options_as_array])```
+```php
+$this->paragraphTitle('message'[, $options_as_array])
+```
 
 ![Paragraph Title](http://i.imgur.com/dIYTTwK.png)
 
 
 ### Ordered List
 
-```$this->orderedList($items[, $options_as_array])```
+```php
+$this->orderedList($items[, $options_as_array])
+```
 
 ![Ordered List](http://i.imgur.com/awXdZ1L.png)
 
 
 ### Unordered List
 
-```$this->unorderedList($items[, $list_item_char])```
+```php
+$this->unorderedList($items[, $list_item_char])
+```
 
 ![Unordered List](http://i.imgur.com/C7DnzFN.png)
 
