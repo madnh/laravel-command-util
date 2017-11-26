@@ -1,6 +1,6 @@
 # Laravel Command Utils
 
-Add util methods to laravel commands
+Add util methods to laravel commands. Require Laravel/Lumen framework >= 5.0.
 
 ## Installation
 

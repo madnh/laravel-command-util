@@ -3,9 +3,6 @@
     "description": "Utils for a laravel command class",
     "keywords": ["laravel", "command"],
     "type": "library",
-    "require": {
-        "laravel/framework": "~5.0"
-    },
     "license": "MIT",
     "authors": [
         {
